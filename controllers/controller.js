@@ -22,7 +22,7 @@ exports.healthCheck = async (req, res) => {
     }
 };
 
-//unsupported methods
+// unsupported methods
 exports.handleUnsupportedMethods = (req, res) => {
     console.error("Health-Check Unsupported Method");
     res.set("Cache-Control", "no-cache");
